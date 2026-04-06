@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Focus Mode</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Focus Mode</h2>
+
+<p id="timerText">Set your focus session</p>
+
+<div class="card">
+
+<h3>Focus Time</h3>
+
+<input
+type="number"
+id="focusMinutes"
+placeholder="Enter minutes (example 45)"
+min="1"
+max="240"
+/>
+
+</div>
+
+
+<div class="card">
+
+<h3>Music Mood</h3>
+
+<select id="focusMusic">
+
+<option value="">No Music</option>
+
+<option value="jfKfPfyJRdk">LoFi Study Style</option>
+
+<option value="4xDzrJKXOOY">Meditation Music</option>
+
+<option value="M2cJY5Y0dY4"> Focus</option>
+
+<option value="5yx6BWlEVcY">Calm </option>
+
+<option value="hHW1oY26kxQ"> Relaxation</option>
+
+<option value="J2UyOTS3UCE"> Deep Focus</option>
+
+</select>
+
+</div>
+
+
+<button onclick="startFocusMode()">
+Start Focus
+</button>
+
+<br><br>
+
+<a href="dashboard.html">Back to Dashboard</a>
+
+</div>
+
+
+<div id="musicPlayer" style="display:none;">
+<iframe
+ id="ytplayer"
+ width="0"
+ height="0"
+ src=""
+ frameborder="0"
+ allow="autoplay; encrypted-media"
+ allowfullscreen
+></iframe>
+</div>
+
+
+</body>
+</html>

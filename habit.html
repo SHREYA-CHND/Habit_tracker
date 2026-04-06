@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Habit</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Create Habit</h2>
+
+<input id="habit" placeholder="Habit Name">
+
+<select id="day">
+
+<option value="Monday">Monday</option>
+<option value="Tuesday">Tuesday</option>
+<option value="Wednesday">Wednesday</option>
+<option value="Thursday">Thursday</option>
+<option value="Friday">Friday</option>
+<option value="Saturday">Saturday</option>
+<option value="Sunday">Sunday</option>
+
+
+</select>
+
+<button onclick="createHabit()">Add Habit</button>
+
+<br><br>
+
+<div id="aiChat" style="display:none;margin-top:20px">
+
+<h3>AI Habit Coach</h3>
+
+<div id="chatBox" style="
+height:200px;
+overflow:auto;
+border:1px solid #ccc;
+padding:10px;
+margin-bottom:10px;
+"></div>
+
+<input id="chatInput" placeholder="Ask AI how to improve this habit">
+
+<button onclick="sendChat()">Send</button>
+
+</div>
+
+<a href="dashboard.html">Back to Dashboard</a>
+
+</div>
+
+</body>
+</html>

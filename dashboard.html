@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadDashboard()">
+
+<div class="container">
+
+<h1>Dashboard</h1>
+
+<div class="grid">
+
+<a href="habit.html">Create Habit</a>
+<a href="focus.html">Focus Mode</a>
+<a href="settings.html">Settings</a>
+
+</div>
+
+<div class="card">
+
+<h3>Your Avatar</h3>
+
+<img id="avatar" width="120">
+
+<p id="xpText"></p>
+
+</div>
+
+<div class="card">
+
+<h3>XP Progress</h3>
+
+<canvas id="xpChart"></canvas>
+
+</div>
+
+<div class="card">
+
+<h3>Today's Habits</h3>
+
+<ul id="habitList"></ul>
+
+
+</body>
+</html>
